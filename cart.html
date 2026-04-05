@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
     <!-- navbar code -->
     <nav class="navbarContrainer">
@@ -40,37 +38,21 @@
         </div>
     </nav>
 
-    <!-- 1st container -->
-    <section class="firstContainer">
-        <aside class="container-content">
-            <h1>Big Billion Days🔥</h1>
-            <p>Flat Upto 50% off an all Electronics</p>
-            <button>Shop Now</button>
-        </aside>
-    </section>
 
-    <!-- 2nd container -->
-    <section class="category">
-        <aside class="cat" onclick="searchCategory('all')">All</aside>
-        <aside class="cat" onclick="searchCategory('mobile')">Mobile</aside>
-        <aside class="cat" onclick="searchCategory('laptop')">Laptops</aside>
-        <aside class="cat" onclick="searchCategory('watch')">Watches</aside>
-    </section>
-
-    <!-- 3rd container -->
-    <section class="features">
-        <aside>24/7 Support</aside>
-        <aside>Free Delivery</aside>
-        <aside>Cashback</aside>
-        <aside>EMI Options</aside>
-    </section>
-
-    <!-- Product Container -->
-
-    <section id="product-container">
+    <!-- Product COntainer -->
+      <section id="product-container">
 
     </section>
+
+
+    <!-- cart Summary -->
+     <section class="cartSummary">
+        <h2 id="total"></h2>
+        <button onclick="clearCart()">Clear Cart</button>
+        <button onclick="checkout()">Checkout</button>
+
+    </section>
+
 </body>
-<script src="./script/homePage.js"></script>
-
+<script src="./script/cart.js"></script>
 </html>
